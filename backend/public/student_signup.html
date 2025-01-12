@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Signup - EduConnect</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="EduConnect Logo">
+            </div>
+            <div class="slogan">
+                <h1>EduConnect: Where Learning Meets Excellence</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="signup">
+            <h2>Student Signup</h2>
+            <form id="signupForm">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" name="name" required>
+                
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" name="email" required>
+                
+                <label for="student-password">Password:</label>
+                <input type="password" id="student-password" name="password" required>
+                
+                <label for="student-confirm-password">Confirm Password:</label>
+                <input type="password" id="student-confirm-password" name="confirm-password" required>
+                
+                <label for="student-class">Class:</label>
+                <select id="student-class" name="class" required>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="plus_one">Plus One</option>
+                    <option value="plus_two">Plus Two</option>
+                </select>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduConnect. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

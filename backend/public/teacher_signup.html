@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Signup - EduConnect</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="EduConnect Logo">
+            </div>
+            <div class="slogan">
+                <h1>EduConnect: Where Learning Meets Excellence</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="signup">
+            <h2>Teacher Signup</h2>
+            <form id="signupForm">
+                <label for="teacher-name">Name:</label>
+                <input type="text" id="teacher-name" name="name" required>
+                
+                <label for="teacher-email">Email:</label>
+                <input type="email" id="teacher-email" name="email" required>
+                
+                <label for="teacher-password">Password:</label>
+                <input type="password" id="teacher-password" name="password" required>
+                
+                <label for="teacher-confirm-password">Confirm Password:</label>
+                <input type="password" id="teacher-confirm-password" name="confirm-password" required>
+                
+                <label for="teacher-classes">Classes you can teach:</label>
+                <div id="teacher-classes">
+                    <label><input type="checkbox" name="classes" value="5"> 5</label>
+                    <label><input type="checkbox" name="classes" value="6"> 6</label>
+                    <label><input type="checkbox" name="classes" value="7"> 7</label>
+                    <label><input type="checkbox" name="classes" value="8"> 8</label>
+                    <label><input type="checkbox" name="classes" value="9"> 9</label>
+                    <label><input type="checkbox" name="classes" value="10"> 10</label>
+                    <label><input type="checkbox" name="classes" value="plus_one"> Plus One</label>
+                    <label><input type="checkbox" name="classes" value="plus_two"> Plus Two</label>
+                </div>
+
+                <label for="teacher-subject">Subject:</label>
+                <select id="teacher-subject" name="subject" required>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="maths">Maths</option>
+                    <option value="biology">Biology</option>
+                </select>
+                
+                <label for="teacher-youtube">YouTube Playlist Link (for free trials):</label>
+                <input type="url" id="teacher-youtube" name="youtube" required>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduConnect. All rights reserved.</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

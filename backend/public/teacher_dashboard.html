@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - EduConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="EduConnect Logo">
+            </div>
+            <div class="slogan">
+                <h1>EduConnect: Where Learning Meets Excellence</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Teacher Dashboard</h2>
+            <div class="session-update">
+                <h3>Update Session Details</h3>
+                <form id="sessionForm" action="/update_session" method="post">
+                    <input type="hidden" id="teacher-id" name="teacher-id" value="1"> <!-- Replace with dynamic value -->
+                    <label for="session-time">Session Time:</label>
+                    <input type="time" id="session-time" name="session-time" required>
+                    
+                    <label for="meet-link">Google Meet Link:</label>
+                    <input type="url" id="meet-link" name="meet-link" required>
+                    
+                    <button type="submit">Update</button>
+                </form>
+            </div>
+            <div class="enrolled-students">
+                <h3>Enrolled Students</h3>
+                <ul id="student-list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduConnect. All rights reserved.</p>
+    </footer>
+    <script src="scripts/teacher_dashboard.js"></script>
+</body>
+</html>
